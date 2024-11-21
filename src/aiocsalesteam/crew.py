@@ -1,10 +1,7 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-
-# Uncomment the following line to use an example of a custom tool
-from aiocsalesteam.tools.custom_tool import MyCustomTool
-
-# Check our tools documentations for more information on how to use them
+from aiocsalesteam.tools.tip_sender_tool import TipSenderTool
+from aiocsalesteam.tools.set_greeting_tool import SetGreetingTool
 from crewai_tools import SerperDevTool
 
 
@@ -19,7 +16,7 @@ class AIOCSalesTeam():
 	def sales_rep_expert(self) -> Agent:
 		return Agent(
 			config=self.agents_config['sales_rep_expert'],
-		    tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+		    tools=[TipSenderTool(),SetGreetingTool()], # Tool for sending NEAR Tokens as a tip
 			verbose=True
 		)
 

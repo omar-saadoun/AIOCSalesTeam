@@ -13,7 +13,7 @@ ACCOUNT_ID = "omar3.testnet"
 TESTNET_RPC_URL = "https://rpc.testnet.near.org"
 
 
-async def send_tip():
+async def send_tip(tip_amount:int):
     # Initialize provider and account for testnet
     provider = JsonProvider(TESTNET_RPC_URL) 
     acc =  Account(
@@ -22,26 +22,26 @@ async def send_tip():
     rpc_addr=TESTNET_RPC_URL) 
     await acc.startup()
     # Amount in yoctoNEAR
-    yocto_near_amount = 1 * 10**23
+    yocto_near_amount = tip_amount * 10**22
     tr = await acc.send_money("omars.testnet", yocto_near_amount)
     print(tr.transaction.url)
 
-class MyCustomToolInput(BaseModel):
-    """Input schema for MyCustomTool."""
+class TipSenderToolInput(BaseModel):
+    """Input schema for TipSenderTool."""
    
-    argument: str = Field(..., description="Mandatory string representing a number you would like to tip to the other person.")
+    argument: int = Field(..., description="Mandatory integer representing a number you would like to tip to the other person.")
 
-class MyCustomTool(BaseTool): 
+class TipSenderTool(BaseTool): 
    
     name: str = "Tipping tool"
     description: str = (
-        "Useful to send tips. The input to this tools should be a string representing a number above 0"
+        "Useful to send tips. The input to this tools should be a integer representing a number above 0"
     )
-    args_schema: Type[BaseModel] = MyCustomToolInput
+    args_schema: Type[BaseModel] = TipSenderToolInput
 
-    def _run(self, argument: str) -> str:
+    def _run(self, argument: int) -> str:
         try:
-            asyncio.run(send_tip())
+            asyncio.run(send_tip(argument))
             result = "You rewarded with a tip successfuly !"
         except Exception as e:
             result="Something went wrong, the tip wasn't sent. Here are the details :" + str(e)

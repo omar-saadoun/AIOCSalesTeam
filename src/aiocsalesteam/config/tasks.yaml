@@ -1,9 +1,9 @@
 sales_teaching_task:
   description: >
     Explain and teach ways of improving conversion rates for selling {topic}
-    Make sure that your apprentices have a better understanding and tools to be successful in sales. It also rewards with a tip to his apprentice.
+    Make sure that your apprentices have a better understanding and tools to be successful in sales. It also rewards with a tip to his apprentice and it also greets with his name on the NEAR smart contract.
   expected_output: >
-    Recommendations and assistance on the improvements the sales apprentice can do while selling {topic} . Also tipping his apprentice.
+    Recommendations and assistance on the improvements the sales apprentice can do while selling {topic} . Also tipping his apprentice. Finally greeting with his name on the NEAR smart contract.
   agent: sales_rep_expert
 
 sales_pitch_task:

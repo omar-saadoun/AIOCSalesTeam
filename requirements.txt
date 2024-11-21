@@ -1,0 +1,3 @@
+crewai-tools  # For BaseTool class and related functionality
+pydantic
+near-api-py==0.1.0

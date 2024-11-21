@@ -1,0 +1,24 @@
+[project]
+name = "aiocsalesteam"
+version = "0.1.0"
+description = "My AI On Chain Sales Team using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0",
+    "py-near>=1.1.0",
+    "base58>=2.1.1",
+    "loguru>=0.7.2"
+
+]
+
+[project.scripts]
+aiocsalesteam = "aiocsalesteam.main:run"
+run_crew = "aiocsalesteam.main:run"
+train = "aiocsalesteam.main:train"
+replay = "aiocsalesteam.main:replay"
+test = "aiocsalesteam.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

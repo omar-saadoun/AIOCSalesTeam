@@ -1,4 +1,4 @@
-# Mysalesteam Crew
+# My AI OnChain Sales Teams Training Program Crew
 
 Welcome to the Mysalesteam Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
@@ -56,24 +56,3 @@ For support, questions, or feedback regarding the Mysalesteam Crew or crewAI.
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
-
-New account <omar3.testnet> created successfully.
-
---------------------  Access key info ------------------
-                                
-Master Seed Phrase: hair salute outer island scene scare lend bargain foot train decrease mosquito
-Seed Phrase HD Path: m/44'/397'/0'
-Implicit Account ID: efff2d84c4368225b5b794fb74d55d6924512f09915adf13b4df81d0519a46e1
-Public Key: ed25519:H9r7yj9V5jiNPsXNA2ixAmcK2i9RqgpoWpL6RYPdeF2g
-SECRET KEYPAIR: ed25519:R8VPRGkS127sqW15BGEUrPC8GLc6Z7LDwa6p8yuwaKVLBJbjmf1oKZYkmNcBWoak7VuQfWrNW2H251DKf7ppLji
-                                
---------------------------------------------------------
-
-Transaction ID: 8uUGZxSgudZMRUpdSvsGd2PCbQC6Y4hng2DU9wTvaseL
-To see the transaction in the transaction explorer, please open this url in your browser:
-https://explorer.testnet.near.org/transactions/8uUGZxSgudZMRUpdSvsGd2PCbQC6Y4hng2DU9wTvaseL
-
-
-Here is your console command if you need to script it or re-run:
-    near account create-account sponsor-by-faucet-service omar3.testnet autogenerate-new-keypair print-to-terminal network-config testnet create
-

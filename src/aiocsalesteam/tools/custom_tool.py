@@ -5,10 +5,10 @@ import asyncio
 from py_near.account import Account
 from py_near.dapps.core import NEAR
 from py_near.providers import JsonProvider
-
+import os
 
 ACCOUNT_ID = "omar3.testnet"
-PRIVATE_KEY = "ed25519:R8VPRGkS127sqW15BGEUrPC8GLc6Z7LDwa6p8yuwaKVLBJbjmf1oKZYkmNcBWoak7VuQfWrNW2H251DKf7ppLji"
+
 # Testnet RPC URL
 TESTNET_RPC_URL = "https://rpc.testnet.near.org"
 
@@ -18,7 +18,7 @@ async def send_tip():
     provider = JsonProvider(TESTNET_RPC_URL) 
     acc =  Account(
     account_id=ACCOUNT_ID,
-    private_key=PRIVATE_KEY,
+    private_key=os.getenv("PRIVATE_KEY"),
     rpc_addr=TESTNET_RPC_URL) 
     await acc.startup()
     # Amount in yoctoNEAR

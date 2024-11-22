@@ -1,6 +1,6 @@
-# My AI OnChain Sales Teams Training Program Crew
+# My AI OnChain Sales Teams Training Program Crew [WIP]
 
-Welcome to the Mysalesteam Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the Mysalesteam Crew project, powered by [crewAI](https://crewai.com) and NEAR Protocol. This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
 

@@ -5,11 +5,14 @@ description = "My AI On Chain Sales Team using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<=3.13"
 dependencies = [
-    "crewai[tools]>=0.80.0,<1.0.0",
+    "crewai[tools,agentops]>=0.80.0,<1.0.0",
     "py-near>=1.1.0",
     "base58>=2.1.1",
-    "loguru>=0.7.2"
-
+    "loguru>=0.7.2",
+    "flwr[simulation]>=1.13.0",
+    "datasets>=2.14.5",
+    "transformers>=4.35.0",
+    "torch>=1.0.2"
 ]
 
 [project.scripts]

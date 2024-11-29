@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import sys
 import warnings
+import agentops
 
 from aiocsalesteam.crew import AIOCSalesTeam
 
+agentops.init()
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 # This main file is intended to be a way for you to run your
@@ -16,8 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Patty burguers',
-        'sendtip':'NEAR'
+        'topic': 'Patty burguers'
     }
     AIOCSalesTeam().crew().kickoff(inputs=inputs)
 

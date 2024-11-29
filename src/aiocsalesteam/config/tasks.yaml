@@ -1,3 +1,10 @@
+looking_for_prices_task:
+  description: >
+    Find the best prices for {topic} and send them to the sales rep expert.
+  expected_output: >
+    Found the best prices for {topic} and send them to the sales rep expert in a readable format.
+  agent: prices_expert
+
 sales_teaching_task:
   description: >
     Explain and teach ways of improving conversion rates for selling {topic}
